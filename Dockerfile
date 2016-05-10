@@ -21,4 +21,5 @@ RUN conda install --quiet --yes -c jaikumarm \
 	'hyperopt=0.0.3.dev' \
 	'ta-lib=0.4.9' \
 	&& conda clean -tipsy
-	
+
+RUN pip install deap xgboost tpot

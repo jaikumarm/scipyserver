@@ -1,0 +1,6 @@
+machine:
+  services:
+    - docker
+dependencies:
+  post:
+    - docker build . | cat # workaround progress weirdness

@@ -16,8 +16,8 @@ RUN curl -L http://downloads.sourceforge.net/project/ta-lib/ta-lib/0.4.0/ta-lib-
 USER jovyan
 
 RUN conda install --quiet --yes -c jaikumarm \
-	'theano=0.9.0.dev0' \
-	'keras=1.0.2' \
+	'theano=0.9.0.dev1' \
+	'keras=1.0.4' \
 	'hyperopt=0.0.3.dev' \
 	'ta-lib=0.4.9' \
 	&& conda clean -tipsy

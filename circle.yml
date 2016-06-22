@@ -3,9 +3,9 @@ machine:
     - docker
 dependencies:
   post:
-    - docker build . | cat # workaround progress weirdness
+    - docker build -t jaikumarm/scipyserver . | cat # workaround progress weirdness
 test:
   post:
-    - python -c "import talib"
-    - python -c "import theano"
-    - python -c "import keras"
+    - docker run --rm jaikumarm/scipyserver python -c "import talib"
+    - docker run --rm jaikumarm/scipyserver python -c "import theano"
+    - docker run --rm jaikumarm/scipyserver python -c "import keras"

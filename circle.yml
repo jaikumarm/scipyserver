@@ -6,6 +6,6 @@ dependencies:
     - docker build -t jaikumarm/scipyserver . | cat # workaround progress weirdness
 test:
   post:
-    - docker run --rm jaikumarm/scipyserver python -c "import talib"
-    - docker run --rm jaikumarm/scipyserver python -c "import theano"
-    - docker run --rm jaikumarm/scipyserver python -c "import keras"
+    - docker run --rm jaikumarm/scipyserver python -c "import talib; print (talib.__version)"
+    - docker run --rm jaikumarm/scipyserver python -c "import theano; print (theano.__version)"
+    - docker run --rm jaikumarm/scipyserver python -c "import keras; print (keras.__version)"

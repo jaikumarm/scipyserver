@@ -5,6 +5,7 @@ dependencies:
   post:
     - docker build . | cat # workaround progress weirdness
 test:
-  - python -c "import talib"
-  - python -c "import theano"
-  - python -c "import keras"
+post:
+    - python -c "import talib"
+    - python -c "import theano"
+    - python -c "import keras"

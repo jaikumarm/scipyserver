@@ -10,3 +10,9 @@ test:
     - docker run --rm jaikumarm/scipyserver python -c "import theano; print (theano.__version__)"
     - docker run --rm jaikumarm/scipyserver python -c "import keras; print (keras.__version__)"
     - docker run --rm jaikumarm/scipyserver python -c "import tpot; print (tpot.__version__)"
+deployment:
+  hub:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push jaikumarm/scipyserver

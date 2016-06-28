@@ -9,3 +9,4 @@ test:
     - docker run --rm jaikumarm/scipyserver python -c "import talib; print (talib.__version__)"
     - docker run --rm jaikumarm/scipyserver python -c "import theano; print (theano.__version__)"
     - docker run --rm jaikumarm/scipyserver python -c "import keras; print (keras.__version__)"
+    - docker run --rm jaikumarm/scipyserver python -c "import tpot; print (tpot.__version__)"

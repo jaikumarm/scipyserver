@@ -20,7 +20,7 @@ RUN conda install --quiet --yes -c jaikumarm \
 	'keras=1.0.4' \
 	'hyperopt=0.0.3.dev' \
 	'ta-lib=0.4.9' \
-	'deap=1.02' \
+	'deap=1.0.2' \
 	'tpot=0.4.parallelize' \
 	&& conda clean -tipsy
 

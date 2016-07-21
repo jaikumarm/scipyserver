@@ -16,12 +16,12 @@ RUN curl -L http://downloads.sourceforge.net/project/ta-lib/ta-lib/0.4.0/ta-lib-
 USER jovyan
 
 RUN conda install --quiet --yes -c jaikumarm \
-	'theano=0.9.0.dev1' \
-	'keras=1.0.4' \
+	'theano=0.9.0.dev2' \
+	'keras=1.0.6' \
 	'hyperopt=0.0.3.dev' \
 	'ta-lib=0.4.9' \
 	'deap=1.0.2' \
-	'tpot=0.4.parallelize' \
+	'tpot=0.4.1.parallelize' \
 	&& conda clean -tipsy
 
 #RUN pip install deap xgboost tpot

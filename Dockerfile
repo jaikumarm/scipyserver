@@ -22,7 +22,7 @@ RUN conda install --quiet --yes -c jaikumarm \
 	'ta-lib=0.4.9' \
 	'deap=1.0.2' \
 	'tpot=0.4.1.parallelize' \
-	'hyperas=0.2' \
+	'hyperas=0.3.dev' \
 	&& conda clean -tipsy
 
 #RUN pip install deap xgboost tpot

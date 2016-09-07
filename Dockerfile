@@ -25,6 +25,7 @@ RUN conda install --quiet --yes -c jaikumarm \
 	'hyperas=0.3.dev' \
 	'flatdict=1.2.0' \
 	&& conda clean -tipsy
+
 RUN conda install --quiet --yes psycopg2 \
 	&& conda clean -tipsy
 

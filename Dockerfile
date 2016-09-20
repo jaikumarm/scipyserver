@@ -22,7 +22,7 @@ RUN conda install --quiet --yes -c jaikumarm \
 	'ta-lib=0.4.9' \
 	'deap=1.0.2' \
 	'tpot=0.4.1.parallelize' \
-	'hyperas=0.3.dev' \
+	'hyperas=0.3.dev2' \
 	'flatdict=1.2.0' \
 	&& conda clean -tipsy
 

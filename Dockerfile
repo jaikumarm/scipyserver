@@ -18,7 +18,7 @@ USER jovyan
 RUN conda install --quiet --yes -c jaikumarm \
 	'theano=0.9.0.dev2' \
 	'keras=1.0.8' \
-	'hyperopt=0.0.3.dev' \
+	'hyperopt=0.0.3.dev2' \
 	'ta-lib=0.4.9' \
 	'deap=1.0.2' \
 	'tpot=0.4.1.parallelize' \
